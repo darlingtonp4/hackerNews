@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px auto 40px;
+  grid-template-areas:
+    "t t t t t t t t t t t t"
+    ". . c c c c c c c c . .";
+}
+textarea {
+  width: 95%;
+  height: 60px;
+}
+.left {
+  grid-area: l;
+}
+.top {
+  grid-area: t;
+}
+
+.menu {
+  grid-area: m;
+}
+
+.content {
+  grid-area: c;
+}
+input {
+  float: left;
+  margin-left: 12px;
+  margin-bottom: 10px;
+}
+button {
+  float: right;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 0px;
+  background-color: black;
+  color: white;
+  font-weight: 900;
+}
+.post-form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 20px;
+  height: 140px;
+  border: #cecece 1px solid;
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.21);
+}
+.title {
+  margin-bottom: 2px;
+  color: black;
+}
+.likesdel {
+  float: right;
+}
+.userdate {
+  margin-top: 15px;
+  color: black;
+}
+.post {
+  color: #747272;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  text-align: left;
+  margin-top: 30px;
+  min-height: 100px;
+  height: max-content;
+  border: #cecece 1px solid;
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.21);
+}
+.navbar {
+  background-color: #282c34;
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 40px;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.deletebtn {
+  color: #561420;
+}
+.deletebtn:hover {
+  font-weight: 900;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
